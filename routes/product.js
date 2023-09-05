@@ -10,9 +10,10 @@ const router = express.Router();
 
 const {getAllProducts} = require('../controllers/product');
 
+
 //defining our routes
 
-router.route("/").get(getAllProducts);
+router.route('/').get(getAllProducts);
 
 
 module.exports = router;
