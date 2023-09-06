@@ -1,12 +1,9 @@
 const DetailedProduct = require('../models/detailedProduct');
 
 const getDetailedProduct = async(req, res) =>{
-    // const productId = req.params.id;
-    // const productId = req.query.id;
-    // const detailedProduct = await DetailedProduct.findOne({ id: productId });
-    // res.status(200).json({ detailedProduct });
     try {
         const productId = req.params.id;
+        // const productId = req.query.id;
         const detailedProduct = await DetailedProduct.findOne({ id: productId });
 
         if (!detailedProduct) {
