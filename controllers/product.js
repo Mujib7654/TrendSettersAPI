@@ -6,11 +6,8 @@ const getAllProducts = async(req, res) =>{
     //models.find({}): is method used to get all data from database of that model
     
     const myData = await Product.find(req.query);
-    res.status(200).json({myData});
+    res.status(200).json(myData);
 };
-
-
-
 
 module.exports = {getAllProducts};
 
